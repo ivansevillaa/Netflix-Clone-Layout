@@ -1,7 +1,15 @@
 // colors
 $main-color: #141414;
-$font-color: #fff;
+$ligth: #fff;
 $header-background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
 
 // fonts
-$font-size: 16px;
+$font-size-base: 16px;
+
+// breakpoints
+$breakpoint-xxs: 320px;
+$breakpoint-xs: 375px;
+$breakpoint-s: 425px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1440px;
