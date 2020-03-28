@@ -10,6 +10,7 @@ body {
   color: #fff;
   margin: 0;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 figure {
@@ -209,6 +210,29 @@ button {
   background: rgba(51, 51, 51, 0.6);
   padding-right: 53px;
   border-left: 3px solid #dcdcdc;
+}
+
+.carousel {
+  display: flex;
+  padding: 0 53px;
+  margin: 50px 0;
+}
+.carousel:hover .carousel__item {
+  transform: translateX(-25%);
+}
+.carousel__item {
+  height: 100px;
+  background-color: green;
+  flex: 0 0 19.7%;
+  text-align: center;
+  margin: 0 2px;
+  transition: transform 300ms ease 100ms;
+}
+.carousel__item:hover {
+  transform: scale(1.5) !important;
+}
+.carousel__item:hover ~ .carousel__item {
+  transform: translateX(25%);
 }
 
 /*# sourceMappingURL=index.css.map */
