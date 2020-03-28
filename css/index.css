@@ -162,7 +162,7 @@ button {
   font-size: 1.1875rem;
   color: #fff;
   font-weight: normal;
-  background-image: url("../../assets/images/movies/harry-potter-cover.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/movies/harry-potter-cover.jpeg");
   border-bottom: 5px solid #111;
   text-shadow: 1px 2px 2px #000;
   padding-right: 0;
