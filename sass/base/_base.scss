@@ -13,3 +13,18 @@ ul, ol {
   list-style: none;
   padding: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 53px 0;
+}

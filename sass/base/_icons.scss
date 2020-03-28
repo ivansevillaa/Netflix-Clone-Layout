@@ -24,11 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-information-outline:before {
+  content: "\e905";
+}
 .icon-user-solid-square:before {
   content: "\e900";
 }
 .icon-triangle-down:before {
   content: "\e901";
+}
+.icon-play:before {
+  content: "\e906";
+}
+.icon-player:before {
+  content: "\e906";
 }
 .icon-gift:before {
   content: "\e902";
