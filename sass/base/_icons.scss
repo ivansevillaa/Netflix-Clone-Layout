@@ -23,7 +23,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-arrow_forward_ios:before {
+  content: "\e907";
+}
+.icon-arrow_back_ios:before {
+  content: "\e908";
+}
+.icon-keyboard_arrow_down:before {
+  content: "\e909";
+}
+.icon-check:before {
+  content: "\e90a";
+}
+.icon-plus:before {
+  content: "\e90b";
+}
 .icon-information-outline:before {
   content: "\e905";
 }
