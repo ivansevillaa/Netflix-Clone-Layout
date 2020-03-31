@@ -1,7 +1,15 @@
 // colors
 $main-color: #141414;
+$secondary-color: #e84d1c;
+
+$dark: #000;
+$dark-14-6: rgba(14, 14, 14, 0.6);
+$ligth-gray-5: rgba(255, 255, 255, .5);
+$ligth-gray-4: rgba(255, 255, 255, 0.4);
 $ligth: #fff;
+
 $header-background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(6,6,6,1) 100%);
+$carousel-item-overlay: linear-gradient(0deg, rgba(20,20,20,0.6) 0%, rgba(6,6,6,0.2) 100%);
 
 // fonts
 $font-size-base: 16px;

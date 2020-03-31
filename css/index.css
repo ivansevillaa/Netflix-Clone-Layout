@@ -239,12 +239,13 @@ button {
 .carousel:hover .carousel-item {
   transform: translateX(-47.5%);
 }
+
 .carousel-item {
-  cursor: pointer;
+  position: relative;
+  margin: 0 2px;
   flex: 0 0 19.7%;
   transition: transform 300ms ease 100ms;
-  margin: 0 2px;
-  position: relative;
+  cursor: pointer;
 }
 .carousel-item:hover {
   transform: scale(1.95) !important;
@@ -259,16 +260,17 @@ button {
   transform: translateX(95%);
 }
 .carousel-item__image {
-  height: 137px;
   width: 100%;
+  height: 137px;
   object-fit: cover;
 }
 .carousel-item__contain {
   width: 100%;
-  position: absolute;
+  height: auto;
   top: 0;
   bottom: 0;
   left: 0;
+  position: absolute;
   display: grid;
   grid-template-rows: 85% 15%;
   opacity: 0;
@@ -276,7 +278,7 @@ button {
 .carousel-item__contain:hover {
   transition-delay: 300ms;
   opacity: 1;
-  background: linear-gradient(0deg, rgba(20, 20, 20, 0.6) 0%, rgba(6, 6, 6, 0.1) 100%);
+  background: linear-gradient(0deg, rgba(20, 20, 20, 0.6) 0%, rgba(6, 6, 6, 0.2) 100%);
 }
 .carousel-item__top-container {
   display: grid;
@@ -291,7 +293,7 @@ button {
 }
 .carousel-item__icon-play {
   align-self: flex-end;
-  font-size: 14px;
+  font-size: 0.875rem;
   border: 1px solid #fff;
   padding: 5px;
 }
@@ -300,7 +302,7 @@ button {
   align-self: flex-end;
   color: rgba(255, 255, 255, 0.5);
   grid-column: 10;
-  font-size: 8px;
+  font-size: 0.5rem;
   padding: 2px;
 }
 .carousel-item__icon-list:hover {
@@ -328,18 +330,19 @@ button {
 .carousel-item__age-rating {
   border: solid 1px rgba(255, 255, 255, 0.4);
   padding: 1px 4px;
-  font-size: 8px;
+  font-size: 0.5rem;
 }
 .carousel-item__time {
   grid-column: span 2;
   margin-top: 2px;
+  margin-left: 5px;
 }
 .carousel-item__icon-play, .carousel-item__icon-list {
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: rgba(14, 14, 14, 0.6);
 }
 .carousel-item__bottom-container {
-  font-size: 24px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,0 +1,122 @@
+.carousel-item {
+  @include relative();
+  margin: 0 2px;
+  flex: 0 0 19.7%;
+  transition: transform 300ms ease 100ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.95) !important;
+  }
+
+  &:hover ~ & {
+    transform: translateX(47.5%);
+  }
+
+  &:nth-of-type(1) {
+    transform-origin: left center;
+
+    &:hover ~ .carousel-item {
+      transform: translateX(95%);
+    }
+  }
+
+  &__image {
+    @include size(100%, 137px);
+    object-fit: cover;
+  }
+
+  &__contain {
+    @include size(100%, auto);
+    @include absolute(top 0 bottom 0 left 0);
+    display: grid;
+    grid-template-rows: 85% 15%;
+    opacity: 0;
+
+    &:hover {
+      transition-delay: 300ms;
+      opacity: 1;
+      background: $carousel-item-overlay;
+    }
+  }
+
+  &__top-container {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    align-content: flex-end;
+    grid-template: repeat(3, 20px) / repeat(10, 1fr);
+    padding: 0 5px;
+
+    &:hover > .carousel-item--red {
+      color: $secondary-color;
+    }
+  }
+
+  &__icon-play {
+    align-self: flex-end;
+    font-size: calculateRem(14px);
+    border: 1px solid $ligth;
+    padding: 5px;
+  }
+
+  &__icon-list {
+    border: 1px solid $ligth-gray-5;
+    align-self: flex-end;
+    color: $ligth-gray-5;
+    grid-column: 10;
+    font-size: calculateRem(8px);
+    padding: 2px;
+
+    &:hover {
+      border-color: $ligth;
+      color: $ligth;
+    }
+  }
+
+  &__title {
+    @include font-styles-helvetica(14px, #e5e5e5, 700);
+    margin: 0;
+    grid-column: 1 / -1;
+  }
+
+  &__age-rating, &__time {
+    @include font-styles-helvetica(8px, #fff, normal);
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  &__age-rating {
+    border: solid 1px $ligth-gray-4;
+    padding: 1px 4px;
+    font-size: calculateRem(8px);
+  }
+
+  &__time {
+    grid-column: span 2;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+
+  &__icon-play, &__icon-list {
+    border-radius: 50%;
+    background-color: $dark-14-6;
+  }
+
+  &__bottom-container {
+    font-size: calculateRem(24px);
+    @include flexbox(center, center);
+
+    &:hover > .carousel-item--red {
+      color: $secondary-color;
+    }
+  }
+
+  // &:nth-of-type(5) {
+  //   transform-origin: right center;
+
+  //   &:hover .carousel-item {
+  //     transform: translateX(-95%);
+  //   }
+  // }
+}
