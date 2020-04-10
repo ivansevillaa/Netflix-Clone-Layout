@@ -1,0 +1,9 @@
+.movie-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__title {
+    @include font-styles-helvetica(19px, $ligth-2, bold);
+    margin: 0 0 15px 2px;
+  }
+}

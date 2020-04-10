@@ -1,8 +1,7 @@
 body {
+  @include font-styles-helvetica($font-size-base, $ligth);
   background-color: $main-color;
-  color: $ligth;
   margin: 0;
-  font-size: $font-size-base;
   overflow-x: hidden;
 }
 

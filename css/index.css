@@ -6,10 +6,12 @@
 }
 
 body {
-  background-color: #141414;
-  color: #fff;
-  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #141414;
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -234,7 +236,6 @@ button {
 
 .carousel {
   display: flex;
-  margin: 50px 0;
 }
 .carousel:hover .carousel-item {
   transform: translateX(-47.5%);
@@ -244,7 +245,7 @@ button {
   position: relative;
   margin: 0 2px;
   flex: 0 0 19.7%;
-  transition: transform 300ms ease 100ms;
+  transition: transform 500ms ease 100ms;
   cursor: pointer;
 }
 .carousel-item:hover {
@@ -274,6 +275,7 @@ button {
   display: grid;
   grid-template-rows: 85% 15%;
   opacity: 0;
+  transition: opacity 800ms;
 }
 .carousel-item__contain:hover {
   transition-delay: 300ms;
@@ -288,7 +290,7 @@ button {
   grid-template: repeat(3, 20px)/repeat(10, 1fr);
   padding: 0 5px;
 }
-.carousel-item__top-container:hover > .carousel-item--red {
+.carousel-item__top-container:hover .carousel-item--red {
   color: #e84d1c;
 }
 .carousel-item__icon-play {
@@ -349,6 +351,19 @@ button {
 }
 .carousel-item__bottom-container:hover > .carousel-item--red {
   color: #e84d1c;
+}
+
+.movie-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.movie-list__title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  color: #e5e5e5;
+  font-weight: bold;
+  margin: 0 0 15px 2px;
 }
 
 /*# sourceMappingURL=index.css.map */
