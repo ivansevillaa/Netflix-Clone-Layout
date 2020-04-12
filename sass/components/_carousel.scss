@@ -4,4 +4,8 @@
   &:hover &-item {
     transform: translateX(-47.5%);
   }
+
+  &:hover &-item--original {
+    transform: translateX(-10%);
+  }
 }

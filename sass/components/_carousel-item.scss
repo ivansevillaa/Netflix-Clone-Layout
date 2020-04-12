@@ -9,8 +9,16 @@
     transform: scale(1.95) !important;
   }
 
+  &--original:hover {
+    transform: scale(1.2) !important;
+  }
+
   &:hover ~ & {
     transform: translateX(47.5%);
+  }
+
+  &--original:hover ~ & {
+    transform: translateX(10%);
   }
 
   &:nth-of-type(1) {
@@ -21,8 +29,19 @@
     }
   }
 
+  &--original:nth-of-type(1) {
+    &:hover ~ .carousel-item {
+      transform: translateX(20%);
+    }
+  }
+
   &__image {
     @include size(100%, 137px);
+    object-fit: cover;
+  }
+
+  &__image--original {
+    @include size(100%, 492px);
     object-fit: cover;
   }
 
@@ -33,6 +52,10 @@
     grid-template-rows: 85% 15%;
     opacity: 0;
     transition: opacity 800ms;
+
+    &--original {
+      grid-template-rows: 93% 7%;
+    }
 
     &:hover {
       transition-delay: 300ms;
@@ -112,12 +135,4 @@
       color: $secondary-color;
     }
   }
-
-  // &:nth-of-type(5) {
-  //   transform-origin: right center;
-
-  //   &:hover .carousel-item {
-  //     transform: translateX(-95%);
-  //   }
-  // }
 }
