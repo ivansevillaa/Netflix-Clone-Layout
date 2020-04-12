@@ -39,6 +39,10 @@ button {
   padding: 0 53px 0;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("../../assets/icons/fonts/icomoon.eot?f03vdt");
@@ -240,6 +244,9 @@ button {
 .carousel:hover .carousel-item {
   transform: translateX(-47.5%);
 }
+.carousel:hover .carousel-item--original {
+  transform: translateX(-10%);
+}
 
 .carousel-item {
   position: relative;
@@ -251,8 +258,14 @@ button {
 .carousel-item:hover {
   transform: scale(1.95) !important;
 }
+.carousel-item--original:hover {
+  transform: scale(1.2) !important;
+}
 .carousel-item:hover ~ .carousel-item {
   transform: translateX(47.5%);
+}
+.carousel-item--original:hover ~ .carousel-item {
+  transform: translateX(10%);
 }
 .carousel-item:nth-of-type(1) {
   transform-origin: left center;
@@ -260,9 +273,17 @@ button {
 .carousel-item:nth-of-type(1):hover ~ .carousel-item {
   transform: translateX(95%);
 }
+.carousel-item--original:nth-of-type(1):hover ~ .carousel-item {
+  transform: translateX(20%);
+}
 .carousel-item__image {
   width: 100%;
   height: 137px;
+  object-fit: cover;
+}
+.carousel-item__image--original {
+  width: 100%;
+  height: 492px;
   object-fit: cover;
 }
 .carousel-item__contain {
@@ -276,6 +297,9 @@ button {
   grid-template-rows: 85% 15%;
   opacity: 0;
   transition: opacity 800ms;
+}
+.carousel-item__contain--original {
+  grid-template-rows: 93% 7%;
 }
 .carousel-item__contain:hover {
   transition-delay: 300ms;
