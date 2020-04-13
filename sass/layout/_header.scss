@@ -1,6 +1,8 @@
 .header {
   @include size(null, 68px);
   @include font-styles-helvetica(14px, null, bold);
+  @include fixed(top 0 right 0 left 0);
+  z-index: 1000;
   display: grid;
   grid-template-columns: 118px 1fr 206px;
   align-items: center;

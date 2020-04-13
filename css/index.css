@@ -130,6 +130,11 @@ button {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
   display: grid;
   grid-template-columns: 118px 1fr 206px;
   align-items: center;
@@ -191,6 +196,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../assets/images/movies/harry-potter-cover.jpeg");
   border-bottom: 5px solid #111;
   text-shadow: 1px 2px 2px #000;
+  margin-top: 68px;
   padding-right: 0;
 }
 .hero-movie-info {
