@@ -7,7 +7,6 @@
     url('../../assets/images/movies/harry-potter-cover.jpeg');
   border-bottom: 5px solid #111;
   text-shadow: 1px 2px 2px#000;
-  margin-top: 68px;
   padding-right: 0;
 
   &-movie-info {
@@ -18,35 +17,15 @@
     padding-top: 86px;
 
     &__logo {
-      @include size(90%, auto)
+      @include size(90%, auto);
     }
 
     .button {
-      @include font-styles-helvetica(15px, $ligth, bold);
-      padding: 11px 34px;
-      background-color: rgba(51, 51, 51, 0.4);
-      border-radius: 3px;
-
-      .icon {
-        @include font-styles-helvetica(16px, inherit, bold);
-        margin-right: 10px;
-      }
-
-      &:hover {
-        box-shadow: 0 0.6vw 1vw -0.4vw rgba(0, 0, 0, 0.35);
-        background-color: #e6e6e6;
-        color: #000;
-      }
+      @extend %play-moreinfo;
     }
   }
 
   .age-rating {
-    @include absolute(right 0);
-    padding: 5px 0 5px 15px;
-    margin: 0;
-    margin-top: -75px;
-    background: rgba(51, 51, 51, 0.6);
-    padding-right: 53px;
-    border-left: 3px solid #dcdcdc;
+    @extend %age-rating;
   }
 }
