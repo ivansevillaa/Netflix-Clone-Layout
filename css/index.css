@@ -207,6 +207,11 @@ button {
   cursor: pointer;
   margin-left: 10px;
 }
+.header .secondary-nav__item--search {
+  width: 270px;
+  height: 35px;
+  border: 1px solid;
+}
 .header .secondary-nav span {
   cursor: pointer;
   display: flex;

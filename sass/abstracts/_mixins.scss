@@ -1,36 +1,30 @@
 // Media Queries
 @mixin screen($size, $type: max, $pixels: $breakpoint-xxs) {
-  @if $size == 'xxs' {
+  @if $size == "xxs" {
     @media only screen and(#{$type}-width: $breakpoint-xxs) {
       @content;
     }
-  }
-  @else if $size == 'xs' {
+  } @else if $size == "xs" {
     @media only screen and(#{$type}-width: $breakpoint-xs) {
       @content;
     }
-  }
-  @else if $size == 's' {
+  } @else if $size == "s" {
     @media only screen and(#{$type}-width: $breakpoint-s) {
       @content;
     }
-  }
-  @else if $size == 'm' {
+  } @else if $size == "m" {
     @media only screen and(#{$type}-width: $breakpoint-m) {
       @content;
     }
-  }
-  @else if $size == 'l' {
+  } @else if $size == "l" {
     @media only screen and(#{$type}-width: $breakpoint-l) {
       @content;
     }
-  }
-  @else if $size == 'xl' {
+  } @else if $size == "xl" {
     @media only screen and(#{$type}-width: $breakpoint-xl) {
       @content;
     }
-  }
-  @else if $size == 'custom' {
+  } @else if $size == "custom" {
     @media only screen and (#{$type}-width: #{$pixels}px) {
       @content;
     }
@@ -47,22 +41,23 @@
 @mixin position($position, $args) {
   @each $o in top right bottom left {
     $i: index($args, $o);
-    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
+    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number
+    {
       #{$o}: nth($args, $i + 1);
     }
   }
   position: $position;
 }
 
-@mixin absolute($args: '') {
+@mixin absolute($args: "") {
   @include position(absolute, $args);
 }
 
-@mixin fixed($args: '') {
+@mixin fixed($args: "") {
   @include position(fixed, $args);
 }
 
-@mixin relative($args: '') {
+@mixin relative($args: "") {
   @include position(relative, $args);
 }
 
@@ -73,8 +68,12 @@
     font-size: $size;
     font-size: calculateRem($size);
   }
-  @if $color { color: $color; }
-  @if $weight { font-weight: $weight; }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
 }
 
 // Flexbox align-items, justify-content
