@@ -9,7 +9,8 @@ figure {
   margin: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -27,6 +28,9 @@ button {
 
 .container {
   padding: 0 53px 0;
+  @include screen("m") {
+    padding: 0 20px 0;
+  }
 }
 
 .uppercase {
