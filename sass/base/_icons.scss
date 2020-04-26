@@ -25,48 +25,94 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-arrow_forward_ios:before {
-  content: "\e907";
+
+.icon-pause:before {
+  content: "\e903";
 }
-.icon-arrow_back_ios:before {
-  content: "\e908";
+.icon-media-control:before {
+  content: "\e903";
 }
-.icon-keyboard_arrow_down:before {
-  content: "\e909";
+.icon-play3:before {
+  content: "\ea1c";
 }
-.icon-check:before {
-  content: "\e90a";
+.icon-volume-high:before {
+  content: "\ea26";
+}
+.icon-volume-medium:before {
+  content: "\ea27";
+}
+.icon-volume-low:before {
+  content: "\ea28";
+}
+.icon-volume-mute2:before {
+  content: "\ea2a";
+}
+.icon-google2:before {
+  content: "\ea89";
 }
 .icon-plus:before {
-  content: "\e90b";
+  content: "\e904";
 }
-.icon-information-outline:before {
+.icon-chevron-right:before {
   content: "\e905";
 }
-.icon-user-solid-square:before {
+.icon-fullscreen_exit:before {
+  content: "\e906";
+}
+.icon-fullscreen:before {
+  content: "\e907";
+}
+.icon-forward_10:before {
+  content: "\e908";
+}
+.icon-replay_10:before {
+  content: "\e909";
+}
+.icon-arrow_back:before {
+  content: "\e90a";
+}
+.icon-arrow_back_ios:before {
+  content: "\e90b";
+}
+.icon-arrow_forward_ios:before {
+  content: "\e90c";
+}
+.icon-replay:before {
+  content: "\e90d";
+}
+.icon-checkmark:before {
+  content: "\e90e";
+}
+.icon-information-outline:before {
+  content: "\e90f";
+}
+.icon-linkedin:before {
+  content: "\e910";
+}
+.icon-instagram:before {
+  content: "\e911";
+}
+.icon-cross:before {
+  content: "\e912";
+}
+.icon-chevron-thin-down:before {
+  content: "\e913";
+}
+.icon-triangle-up:before {
   content: "\e900";
 }
 .icon-triangle-down:before {
   content: "\e901";
 }
-.icon-play:before {
-  content: "\e906";
+.icon-youtube-play:before {
+  content: "\e914";
 }
-.icon-player:before {
-  content: "\e906";
+.icon-twitter:before {
+  content: "\e915";
 }
-.icon-gift:before {
-  content: "\e902";
-}
-.icon-present:before {
-  content: "\e902";
-}
-.icon-box:before {
-  content: "\e902";
-}
-.icon-bell:before {
-  content: "\e903";
+.icon-facebook-official:before {
+  content: "\e916";
 }
 .icon-search:before {
-  content: "\e904";
+  content: "\e902";
 }
