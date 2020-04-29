@@ -1,9 +1,18 @@
 // Abstracts
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+@import "./abstracts/variables";
 
 // Base
+@import "./base/animations";
+@import "./base/base";
+@import "./base/icons";
+@import "./base/typography";
 
 // Layout
 
 // Components
+@import "./components/header";
 
 // Pages

@@ -26,11 +26,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e917";
+}
 .icon-pause:before {
   content: "\e903";
 }
 .icon-media-control:before {
   content: "\e903";
+}
+.icon-menu1:before {
+  content: "\e9bd";
 }
 .icon-play3:before {
   content: "\ea1c";
@@ -49,6 +55,9 @@
 }
 .icon-google2:before {
   content: "\ea89";
+}
+.icon-menu:before {
+  content: "\e918";
 }
 .icon-plus:before {
   content: "\e904";
@@ -113,6 +122,6 @@
 .icon-facebook-official:before {
   content: "\e916";
 }
-.icon-search:before {
+.icon-search1:before {
   content: "\e902";
 }
