@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <i class="icon-menu burger-button" id="burger-button"></i>
+      <a class="header__logo" href="./index.html">
+        <img src="../assets/images/logos/netflix-logo.png" alt="netflix logo" />
+      </a>
+      <nav class="header__navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./movies.html">Movies</a></li>
+          <li><a href="./my-list.html">My List</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions actions-container">
+        <form class="actions-container__search" role="search">
+          <i class="icon-search"></i>
+          <input type="search" placeholder="Search a movie" />
+        </form>
+        <div class="actions-container__profile-menu">
+          <div class="actions-container__profile-menu--profile">
+            <img src="../assets/images/profile/profile7.jpg" alt="profile" />
+            <i class="icon-triangle-down"></i>
+          </div>
+          <ul class="actions-container__profile-menu--options">
+            <i class="icon-triangle-up"></i>
+            <a href=""><li>Account</li></a>
+            <a href=""><li>Sign out of Netflix</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const mq620px = window.matchMedia("screen and (max-width: 620px)");
+      const navbar = document.querySelector(".header__navbar");
+      const burgerButton = document.querySelector("#burger-button");
+
+      burgerButton.addEventListener("click", toggleNavbar);
+
+      mq620px.addListener(validation);
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener("click", toggleNavbar);
+        } else {
+          burgerButton.removeEventListener("click", toggleNavbar);
+        }
+      }
+      validation(navbar);
+
+      function toggleNavbar() {
+        if (navbar.classList.contains("header__navbar--active")) {
+          navbar.classList.remove("header__navbar--active");
+        } else {
+          navbar.classList.add("header__navbar--active");
+        }
+      }
+    </script>
+  </body>
+</html>

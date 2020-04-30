@@ -665,8 +665,8 @@ template {
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
-  height: 32px;
   width: 264px;
+  height: 32px;
   border: 1px solid #ccc;
   padding: 1px 6px;
   margin-right: 25px;

@@ -1,7 +1,7 @@
 // Media Queries
 @mixin screen($size, $type: max, $pixels: $breakpoint-smallest) {
   @if $size == "smallest" {
-    @media only screen and((#{$type}-width: $breakpoint-smallest)) {
+    @media only screen and(#{$type}-width: $breakpoint-smallest) {
       @content;
     }
   } @else if $size == "xxs" {
