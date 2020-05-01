@@ -47,6 +47,10 @@ input:focus {
   outline: none;
 }
 
+p {
+  cursor: default;
+}
+
 /* clears the 'X' from Internet Explorer */
 input[type="search"]::-ms-clear {
   display: none;

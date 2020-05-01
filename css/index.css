@@ -55,6 +55,10 @@ input:focus {
   outline: none;
 }
 
+p {
+  cursor: default;
+}
+
 /* clears the 'X' from Internet Explorer */
 input[type=search]::-ms-clear {
   display: none;
@@ -575,6 +579,7 @@ template {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   position: fixed;
+  z-index: 2;
   background: linear-gradient(180deg, #060606 0%, #141414 100%);
   display: flex;
   align-items: center;
@@ -756,6 +761,117 @@ template {
 }
 .header > .actions-container .actions-container__profile-menu:hover .actions-container__profile-menu--options {
   display: block;
+}
+
+.hero {
+  width: 100%;
+  height: 760px;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 620px) {
+  .hero {
+    display: none;
+  }
+}
+.hero__background {
+  width: inherit;
+  height: inherit;
+}
+.hero__content {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(77deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 85%);
+  border-bottom: 10px solid #1a1a1a;
+}
+.hero__content--left {
+  top: 180px;
+  position: absolute;
+  width: 485px;
+}
+.hero__content--right {
+  right: 0;
+  bottom: 240px;
+  position: absolute;
+}
+
+.movie-info__logo {
+  width: 80%;
+  object-fit: cover;
+}
+.movie-info__description {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #fff;
+  font-weight: normal;
+  margin: 10px 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #141414;
+  font-weight: bold;
+  border: none;
+  margin-right: 10px;
+  padding: 7px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 125ms;
+}
+.button--light {
+  background-color: #fff;
+}
+.button--light:hover {
+  background-color: #cbcbcb;
+}
+.button--dark {
+  background: rgba(133, 133, 133, 0.6);
+  color: #fff;
+}
+.button--dark:hover {
+  background-color: rgba(75, 75, 75, 0.6);
+}
+.button i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.button__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-info-action {
+  display: flex;
+  align-items: center;
+}
+.video-info-action .video-action {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 5px;
+  margin-right: 15px;
+  background-color: rgba(133, 133, 133, 0.6);
+  border: solid 1px #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.video-info-action .video-action:hover {
+  background-color: rgba(75, 75, 75, 0.6);
+}
+.video-info-action .age-rating {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: rgba(51, 51, 51, 0.6);
+  margin: 0;
+  padding: 6px 43px 6px 9px;
+  border-left: 3px solid #ccc;
 }
 
 /*# sourceMappingURL=index.css.map */
