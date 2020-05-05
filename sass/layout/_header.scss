@@ -4,7 +4,7 @@
   }
   @include size(100%, 68px);
   @include font-styles-helvetica(0.9rem);
-  @include fixed();
+  @include fixed(top 0);
   z-index: 2;
   background: $background-header;
   display: flex;

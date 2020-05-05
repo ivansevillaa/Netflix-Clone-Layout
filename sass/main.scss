@@ -11,10 +11,10 @@
 @import "./base/typography";
 
 // Layout
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/footer";
 
 // Components
-@import "./components/header";
-@import "./components/hero";
-@import "./components/footer";
 
 // Pages

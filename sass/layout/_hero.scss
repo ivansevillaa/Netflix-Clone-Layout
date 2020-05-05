@@ -4,7 +4,7 @@
   }
 
   @include size(100%, 760px);
-  @include relative();
+  @include absolute();
   z-index: 1;
 
   &__background {
