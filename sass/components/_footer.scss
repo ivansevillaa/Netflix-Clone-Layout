@@ -1,0 +1,26 @@
+.footer {
+  @include font-styles-helvetica(14px, $gray-dark, normal);
+  margin-top: 20px;
+  padding: 0 125px;
+
+  &__icons {
+    font-size: 30px;
+    margin-bottom: 10px;
+    i {
+      margin-right: 15px;
+    }
+  }
+
+  &__text,
+  &__description {
+    margin: 0 0 16px 0;
+  }
+
+  &__description {
+    font-size: 12px;
+  }
+
+  &__text:hover {
+    text-decoration: underline;
+  }
+}

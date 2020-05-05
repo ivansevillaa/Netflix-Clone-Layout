@@ -874,4 +874,29 @@ template {
   border-left: 3px solid #ccc;
 }
 
+.footer {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #808080;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0 125px;
+}
+.footer__icons {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.footer__icons i {
+  margin-right: 15px;
+}
+.footer__text, .footer__description {
+  margin: 0 0 16px 0;
+}
+.footer__description {
+  font-size: 12px;
+}
+.footer__text:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=index.css.map */
