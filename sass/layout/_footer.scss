@@ -1,9 +1,15 @@
 .footer {
+  @include screen("s") {
+    padding: 0 20px;
+  }
   @include font-styles-helvetica(14px, $gray-dark, normal);
   margin-top: 20px;
   padding: 0 125px;
 
   &__icons {
+    @include screen("xs") {
+      font-size: 26px;
+    }
     font-size: 30px;
     margin-bottom: 10px;
     i {

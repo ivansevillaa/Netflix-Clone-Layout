@@ -1,0 +1,17 @@
+.my-list {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header" "movies" "footer";
+
+  .header {
+    grid-area: header;
+  }
+
+  .movies {
+    grid-area: movies;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+}

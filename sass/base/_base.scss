@@ -15,6 +15,7 @@
 body {
   @include font-styles-helvetica($font-size-base, $font-color, bold);
   background-color: $dark;
+  min-height: 100vh;
 }
 
 figure {
