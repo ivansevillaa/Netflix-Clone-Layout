@@ -1,0 +1,26 @@
+.trailer-info-action {
+  display: flex;
+  align-items: center;
+
+  .trailer-action {
+    @include font-styles-helvetica(18px, null, normal);
+    padding: 5px;
+    margin-right: 15px;
+    background-color: $gray-transparent-14;
+    border: solid 1px $font-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gray-transparent-15;
+    }
+  }
+
+  .age-rating {
+    @include font-styles-helvetica(14px, null, normal);
+    background-color: $gray-transparent-16;
+    margin: 0;
+    padding: 6px 43px 6px 9px;
+    border-left: 3px solid $gray-lightest;
+  }
+}

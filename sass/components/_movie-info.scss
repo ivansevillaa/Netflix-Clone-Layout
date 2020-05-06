@@ -1,0 +1,12 @@
+.movie-info {
+  &__logo {
+    width: 80%;
+    object-fit: cover;
+  }
+
+  &__description {
+    @include font-styles-helvetica(19px, $font-color, normal);
+    margin: 10px 0 20px;
+    text-shadow: 2px 2px 4px $gray-transparent-8;
+  }
+}

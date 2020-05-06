@@ -10,15 +10,6 @@
   display: flex;
   align-items: center;
 
-  .burger-button {
-    @include screen("s") {
-      display: block;
-    }
-    font-size: 20px;
-    margin-right: 5px;
-    display: none;
-  }
-
   &__logo,
   &__logo img {
     @include screen("m") {

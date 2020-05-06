@@ -4,6 +4,7 @@
   grid-template-areas: "header" "movies" "footer";
 
   .header {
+    @include absolute();
     grid-area: header;
   }
 
