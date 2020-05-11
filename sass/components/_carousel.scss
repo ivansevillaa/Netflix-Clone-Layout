@@ -1,0 +1,52 @@
+.carousel {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &__title {
+    @include font-styles-helvetica(19px, $light, bold);
+    margin: 10px 0 12px 2px;
+  }
+
+  &__item-wrapper {
+    display: flex;
+  }
+
+  &__item-wrapper:hover &__item {
+    transform: translateX(-45%);
+  }
+
+  &__item {
+    @include screen("l") {
+      flex: 0 0 25%;
+      height: 128px;
+    }
+    @include screen("m") {
+      flex: 0 0 33%;
+      height: 127px;
+    }
+    @include screen("s") {
+      flex: 0 0 50%;
+      height: 119px;
+    }
+    background-color: $dark;
+    height: 137px;
+    flex: 0 0 19.7%;
+    margin: 0 2px;
+    cursor: pointer;
+    transition: transform 500ms ease 500ms;
+  }
+
+  &__item:hover ~ &__item {
+    transform: translateX(45%);
+  }
+
+  &__item:hover {
+    transform: scale(1.9) !important;
+  }
+
+  &__item:nth-child(1):hover ~ &__item {
+    transform: translateX(90%);
+  }
+  &__item:nth-child(1) {
+    transform-origin: center left;
+  }
+}
