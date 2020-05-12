@@ -1,5 +1,4 @@
 .movies {
-  position: relative;
-  top: -200px;
+  @include relative(top -200px);
   z-index: 1;
 }

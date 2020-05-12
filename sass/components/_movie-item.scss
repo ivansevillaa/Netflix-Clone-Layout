@@ -1,0 +1,94 @@
+.movie-item {
+  @include relative();
+  &__image {
+    @include size(100%);
+    object-fit: cover;
+  }
+
+  &__overlay {
+    @include absolute(bottom -1px left 0 right 0 top 0);
+    background: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.5) 0%,
+      rgba(20, 20, 20, 0) 100%
+    );
+  }
+
+  &__content-wrapper {
+    @include absolute(bottom 20px left 0 right 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  &__more-info-button {
+    @include absolute(bottom 0 left 0 right 0);
+  }
+
+  &__description {
+    h4,
+    p {
+      cursor: pointer;
+      margin: 0;
+    }
+
+    h4 {
+      @include font-styles-helvetica(14px, $font-color, bold);
+    }
+    p {
+      @include font-styles-helvetica(10px, $font-color, normal);
+      display: inline;
+    }
+    .age-rated {
+      border: 1px solid $gray-transparent-1;
+      padding: 0 5px;
+    }
+
+    button {
+      @include size(22px);
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      background-color: $font-color;
+      border-radius: 50%;
+      border: none;
+    }
+    button > i {
+      color: $dark;
+      font-size: 14px;
+      text-align: center;
+      margin-left: 2px;
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__buttons > i {
+    @include font-styles-helvetica(8px, $light, normal);
+    background-color: $gray-transparent-9;
+    border: solid 1px $gray-transparent-1;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 2px 0;
+    transition: 300ms;
+  }
+  &__buttons > i:hover {
+    color: $font-color;
+    border: solid 1px $font-color;
+    background-color: $gray-transparent-11;
+  }
+
+  &__more-info-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  &__more-info-button:hover {
+    color: $color-primary-light;
+  }
+}
