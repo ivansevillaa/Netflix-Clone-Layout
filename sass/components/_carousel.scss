@@ -14,6 +14,10 @@
     transform: translateX(-45%);
   }
 
+  &__item-wrapper:hover &__item--original {
+    transform: translateX(-10%);
+  }
+
   &__item {
     @include screen("l") {
       flex: 0 0 24.7%;
@@ -34,19 +38,39 @@
     cursor: pointer;
     transition: transform 400ms ease 500ms;
   }
-
   &__item:hover ~ &__item {
     transform: translateX(45%);
   }
-
   &__item:hover {
     transform: scale(1.9) !important;
   }
-
   &__item:nth-child(1):hover ~ &__item {
     transform: translateX(90%);
   }
   &__item:nth-child(1) {
     transform-origin: center left;
+  }
+
+  &__item--original {
+    @include screen("l") {
+      height: 455px;
+    }
+    @include screen("m") {
+      height: 127px;
+    }
+    @include screen("s") {
+      height: 119px;
+    }
+    background-color: $dark;
+    height: 488px;
+  }
+  &__item--original:hover {
+    transform: scale(1.2) !important;
+  }
+  &__item--original:hover ~ &__item--original {
+    transform: translateX(10%);
+  }
+  &__item--original:nth-child(1):hover ~ &__item--original {
+    transform: translateX(20%);
   }
 }
