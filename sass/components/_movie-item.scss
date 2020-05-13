@@ -12,6 +12,8 @@
       rgba(20, 20, 20, 0.5) 0%,
       rgba(20, 20, 20, 0) 100%
     );
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
   }
 
   &__content-wrapper {
@@ -34,6 +36,8 @@
 
     h4 {
       @include font-styles-helvetica(14px, $font-color, bold);
+      text-shadow: 2px 2px 4px $gray-transparent-8;
+      margin-top: 2px;
     }
     p {
       @include font-styles-helvetica(10px, $font-color, normal);
@@ -45,7 +49,7 @@
     }
 
     button {
-      @include size(22px);
+      @include size(26px);
       display: flex;
       justify-content: center;
       padding: 0;
@@ -55,7 +59,7 @@
     }
     button > i {
       color: $dark;
-      font-size: 14px;
+      font-size: 16px;
       text-align: center;
       margin-left: 2px;
       cursor: pointer;
@@ -91,4 +95,9 @@
   &__more-info-button:hover {
     color: $color-primary-light;
   }
+}
+
+.movie-item:hover .movie-item__overlay {
+  transition: opacity 1000ms ease-in-out;
+  opacity: 1;
 }

@@ -620,7 +620,6 @@ template {
 @media only screen and (max-width: 620px) {
   .header__navbar {
     top: 68px;
-    right: 60%;
     bottom: 0;
     left: -100vw;
     position: fixed;
@@ -659,6 +658,7 @@ template {
 .header__navbar--active {
   background: #141414;
   left: 0;
+  right: 60%;
 }
 
 .header > .actions-container {
@@ -802,7 +802,6 @@ template {
   font-size: 14px;
   color: #808080;
   font-weight: normal;
-  margin-top: 20px;
   padding: 0 125px;
 }
 @media only screen and (max-width: 620px) {
@@ -836,6 +835,12 @@ template {
   top: -200px;
   position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 620px) {
+  .movies {
+    top: 68px;
+    position: relative;
+  }
 }
 
 .button {
@@ -937,7 +942,7 @@ template {
   }
 }
 .featured-movie .container {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 30px 53px 60px;
   display: grid;
   grid-template-columns: minmax(300px, 1fr) minmax(250px, 420px);
@@ -1004,23 +1009,23 @@ template {
   flex: 0 0 19.7%;
   margin: 0 2px;
   cursor: pointer;
-  transition: transform 500ms ease 500ms;
+  transition: transform 400ms ease 500ms;
 }
 @media only screen and (max-width: 1024px) {
   .carousel__item {
-    flex: 0 0 25%;
+    flex: 0 0 24.7%;
     height: 128px;
   }
 }
 @media only screen and (max-width: 768px) {
   .carousel__item {
-    flex: 0 0 33%;
+    flex: 0 0 32%;
     height: 127px;
   }
 }
 @media only screen and (max-width: 620px) {
   .carousel__item {
-    flex: 0 0 50%;
+    flex: 0 0 48%;
     height: 119px;
   }
 }
@@ -1052,6 +1057,8 @@ template {
   left: 0;
   position: absolute;
   background: linear-gradient(0deg, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0) 100%);
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
 }
 .movie-item__content-wrapper {
   right: 0;
@@ -1078,6 +1085,8 @@ template {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 2px;
 }
 .movie-item__description p {
   font-family: Helvetica, Arial, sans-serif;
@@ -1091,8 +1100,8 @@ template {
   padding: 0 5px;
 }
 .movie-item__description button {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -1102,7 +1111,7 @@ template {
 }
 .movie-item__description button > i {
   color: #141414;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin-left: 2px;
   cursor: pointer;
@@ -1137,6 +1146,11 @@ template {
 }
 .movie-item__more-info-button:hover {
   color: #e50914;
+}
+
+.movie-item:hover .movie-item__overlay {
+  transition: opacity 1000ms ease-in-out;
+  opacity: 1;
 }
 
 .home {

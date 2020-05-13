@@ -16,15 +16,15 @@
 
   &__item {
     @include screen("l") {
-      flex: 0 0 25%;
+      flex: 0 0 24.7%;
       height: 128px;
     }
     @include screen("m") {
-      flex: 0 0 33%;
+      flex: 0 0 32%;
       height: 127px;
     }
     @include screen("s") {
-      flex: 0 0 50%;
+      flex: 0 0 48%;
       height: 119px;
     }
     background-color: $dark;
@@ -32,7 +32,7 @@
     flex: 0 0 19.7%;
     margin: 0 2px;
     cursor: pointer;
-    transition: transform 500ms ease 500ms;
+    transition: transform 400ms ease 500ms;
   }
 
   &__item:hover ~ &__item {

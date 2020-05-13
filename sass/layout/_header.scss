@@ -25,7 +25,7 @@
 
   &__navbar {
     @include screen("s") {
-      @include fixed(top 68px left -100vw bottom 0 right 60%);
+      @include fixed(top 68px left -100vw bottom 0);
       display: flex;
       justify-content: flex-start;
       padding-left: 20px;
@@ -59,6 +59,7 @@
     &--active {
       background: $dark;
       left: 0;
+      right: 60%;
     }
   }
 }
