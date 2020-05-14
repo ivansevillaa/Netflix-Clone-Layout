@@ -1,0 +1,31 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(
+      circle,
+      rgba(20, 20, 20, 0.5) 0%,
+      rgba(20, 20, 20, 0.5) 100%
+    ),
+    url("../../assets/images/404/404_1.jpg");
+  background-position: center;
+  object-fit: contain;
+  text-shadow: 2px 2px 4px $gray-transparent-8;
+
+  &__content {
+    h3 {
+      @include font-styles-helvetica(60px, $font-color, bold);
+      margin: 0 0 27px;
+    }
+    p {
+      @include font-styles-helvetica(22px, $font-color, normal);
+      margin: 0 0 22px;
+    }
+
+    .button--not-found {
+      @include font-styles-helvetica(16px, $dark, bold);
+      padding: 16px 20px;
+    }
+  }
+}

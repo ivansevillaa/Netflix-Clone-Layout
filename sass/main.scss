@@ -15,6 +15,7 @@
 @import "./layout/hero";
 @import "./layout/footer";
 @import "./layout/movies";
+@import "./layout/movies-playlist";
 
 // Components
 @import "./components/button";
@@ -28,3 +29,4 @@
 // Pages
 @import "./pages/home";
 @import "./pages/my-list";
+@import "./pages/not-found";

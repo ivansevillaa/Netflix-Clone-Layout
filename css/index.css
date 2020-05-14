@@ -843,6 +843,11 @@ template {
   }
 }
 
+.movies-playlist {
+  top: 100px;
+  position: relative;
+}
+
 .button {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -1222,6 +1227,38 @@ template {
 }
 .my-list .footer {
   grid-area: footer;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 100%), url("../../assets/images/404/404_1.jpg");
+  background-position: center;
+  object-fit: contain;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.not-found__content h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 27px;
+}
+.not-found__content p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0 0 22px;
+}
+.not-found__content .button--not-found {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #141414;
+  font-weight: bold;
+  padding: 16px 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
