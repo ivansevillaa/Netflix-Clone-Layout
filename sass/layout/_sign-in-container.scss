@@ -1,0 +1,58 @@
+.sign-in-container {
+  @include screen("s") {
+    width: 100vw;
+    background-color: none;
+    padding: 30px;
+  }
+  @include screen("xxs") {
+    padding: 18px;
+  }
+  width: 450px;
+  background-color: $gray-transparent-11;
+  padding: 60px;
+  border-radius: 5px;
+
+  &__title {
+    @include font-styles-helvetica(32px, $font-color, bold);
+    margin: 0 0 28px;
+  }
+
+  &__form {
+    @include font-styles-helvetica(13px, $gray-light, normal);
+    margin-bottom: 60px;
+  }
+
+  &__footer {
+    @include font-styles-helvetica(13px, $form-checkbox-background, normal);
+
+    a {
+      cursor: pointer;
+    }
+
+    a,
+    p {
+      margin: 16px 0;
+    }
+
+    img {
+      @include size(24px);
+      margin-right: 5px;
+    }
+
+    &--social-media {
+      display: flex;
+      align-items: center;
+    }
+
+    &--bigger-font {
+      font-size: 16px;
+    }
+
+    &--white-font {
+      color: $font-color;
+    }
+    &--white-font:hover {
+      text-decoration: underline;
+    }
+  }
+}

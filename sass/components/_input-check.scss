@@ -1,0 +1,47 @@
+.input-check {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+
+  /* Hide the browser's default checkbox */
+  input {
+    @include absolute();
+    @include size(0);
+    opacity: 0;
+  }
+
+  /* Background while checkbox is active or focus */
+  &:active input ~ .input-check__checkmark,
+  &:focus-within input ~ .input-check__checkmark {
+    background-color: $font-color;
+  }
+
+  /* Show the checkmark when checked */
+  input:checked ~ .input-check__checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .input-check__checkmark:after {
+    @include size(4px, 10px);
+    left: 5px;
+    top: 0px;
+    border: solid $full-dark;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}
+
+/* Create a custom checkbox */
+.input-check__checkmark {
+  @include absolute(top 0 left 0);
+  @include size(16px);
+  background-color: $form-checkbox-background;
+  border-radius: 2px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}

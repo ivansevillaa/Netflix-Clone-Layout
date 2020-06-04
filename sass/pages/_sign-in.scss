@@ -1,0 +1,15 @@
+.sign-in {
+  @include screen("s") {
+    background: $full-dark;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+      circle,
+      rgba(6, 6, 6, 0.6) 0%,
+      rgba(6, 6, 6, 0.6) 100%
+    ),
+    url("../../assets/images/backgrounds/signin-signup.jpg");
+}

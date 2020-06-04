@@ -1,0 +1,57 @@
+.form {
+  &__input-container {
+    @include font-styles-helvetica(16px, $form-font-color, normal);
+    @include relative();
+
+    input {
+      padding: 16px 20px 0;
+      height: 50px;
+      background-color: $gray-darker;
+      margin-bottom: 16px;
+      border-radius: 4px;
+    }
+
+    label {
+      @include absolute(top 0 left 0);
+      padding: 16px 20px;
+      pointer-events: none;
+      transition: 300ms;
+    }
+
+    input:focus ~ label,
+    input:valid ~ label {
+      top: -10px;
+      left: 0;
+      font-size: 12px;
+    }
+
+    input:focus {
+      background-color: $form-active-color;
+    }
+  }
+
+  &__remember-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 16px;
+    .input-check__text {
+      display: flex;
+      align-items: center;
+      height: 18px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 16px;
+    margin: 24px 0 12px;
+  }
+}

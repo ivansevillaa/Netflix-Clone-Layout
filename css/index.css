@@ -49,7 +49,9 @@ input {
   background: none;
 }
 
-input[type=search] {
+input[type=search],
+input[type=text],
+input[type=password] {
   color: #fff;
 }
 
@@ -848,6 +850,70 @@ template {
   position: relative;
 }
 
+.sign-in-container {
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 60px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 620px) {
+  .sign-in-container {
+    width: 100vw;
+    background-color: none;
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .sign-in-container {
+    padding: 18px;
+  }
+}
+.sign-in-container__title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 28px;
+}
+.sign-in-container__form {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #b3b3b3;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+.sign-in-container__footer {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #737373;
+  font-weight: normal;
+}
+.sign-in-container__footer a {
+  cursor: pointer;
+}
+.sign-in-container__footer a,
+.sign-in-container__footer p {
+  margin: 16px 0;
+}
+.sign-in-container__footer img {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.sign-in-container__footer--social-media {
+  display: flex;
+  align-items: center;
+}
+.sign-in-container__footer--bigger-font {
+  font-size: 16px;
+}
+.sign-in-container__footer--white-font {
+  color: #fff;
+}
+.sign-in-container__footer--white-font:hover {
+  text-decoration: underline;
+}
+
 .button {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -872,6 +938,10 @@ template {
 }
 .button--dark:hover {
   background-color: rgba(75, 75, 75, 0.6);
+}
+.button--red {
+  background-color: #e50914;
+  color: #fff;
 }
 .button i {
   font-size: 25px;
@@ -1189,6 +1259,107 @@ template {
   opacity: 1;
 }
 
+.form__input-container {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+  font-weight: normal;
+  position: relative;
+}
+.form__input-container input {
+  padding: 16px 20px 0;
+  height: 50px;
+  background-color: #333;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+.form__input-container label {
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 16px 20px;
+  pointer-events: none;
+  transition: 300ms;
+}
+.form__input-container input:focus ~ label,
+.form__input-container input:valid ~ label {
+  top: -10px;
+  left: 0;
+  font-size: 12px;
+}
+.form__input-container input:focus {
+  background-color: #454545;
+}
+.form__remember-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 16px;
+}
+.form__remember-container .input-check__text {
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+.form__remember-container a {
+  cursor: pointer;
+}
+.form__remember-container a:hover {
+  text-decoration: underline;
+}
+.form__button {
+  width: 100%;
+  padding: 16px;
+  margin: 24px 0 12px;
+}
+
+.input-check {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  /* Hide the browser's default checkbox */
+  /* Background while checkbox is active or focus */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.input-check input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.input-check:active input ~ .input-check__checkmark, .input-check:focus-within input ~ .input-check__checkmark {
+  background-color: #fff;
+}
+.input-check input:checked ~ .input-check__checkmark:after {
+  display: block;
+}
+.input-check .input-check__checkmark:after {
+  width: 4px;
+  height: 10px;
+  left: 5px;
+  top: 0px;
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Create a custom checkbox */
+.input-check__checkmark {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #737373;
+  border-radius: 2px;
+}
+.input-check__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
 .home {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
@@ -1234,7 +1405,7 @@ template {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: radial-gradient(circle, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 100%), url("../../assets/images/404/404_1.jpg");
+  background: radial-gradient(circle, rgba(20, 20, 20, 0.5) 0%, rgba(20, 20, 20, 0.5) 100%), url("../../assets/images/backgrounds/404_1.jpg");
   background-position: center;
   object-fit: contain;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -1259,6 +1430,18 @@ template {
   color: #141414;
   font-weight: bold;
   padding: 16px 20px;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(6, 6, 6, 0.6) 0%, rgba(6, 6, 6, 0.6) 100%), url("../../assets/images/backgrounds/signin-signup.jpg");
+}
+@media only screen and (max-width: 620px) {
+  .sign-in {
+    background: #000;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

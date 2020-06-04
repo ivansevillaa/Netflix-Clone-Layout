@@ -23,6 +23,11 @@
     }
   }
 
+  &--red {
+    background-color: $color-primary-light;
+    color: $font-color;
+  }
+
   i {
     font-size: 25px;
     margin-right: 10px;

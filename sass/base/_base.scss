@@ -41,7 +41,9 @@ input {
   background: none;
 }
 
-input[type="search"] {
+input[type="search"],
+input[type="text"],
+input[type="password"] {
   color: $font-color;
 }
 

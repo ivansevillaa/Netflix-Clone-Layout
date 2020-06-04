@@ -16,6 +16,7 @@
 @import "./layout/footer";
 @import "./layout/movies";
 @import "./layout/movies-playlist";
+@import "./layout/sign-in-container";
 
 // Components
 @import "./components/button";
@@ -25,8 +26,11 @@
 @import "./components/featured-movie";
 @import "./components/carousel";
 @import "./components/movie-item";
+@import "./components/form";
+@import "./components/input-check";
 
 // Pages
 @import "./pages/home";
 @import "./pages/my-list";
 @import "./pages/not-found";
+@import "./pages/sign-in";

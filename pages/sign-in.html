@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body class="sign-in">
+    <main class="sign-in-container">
+      <h3 class="sign-in-container__title">Sign In</h3>
+      <form class="sign-in-container__form form">
+        <div class="form__input-container">
+          <input type="text" required />
+          <label>Email</label>
+        </div>
+        <div class="form__input-container">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <button class="form__button button button--red">Sign In</button>
+        <div class="form__remember-container">
+          <label class="input-check">
+            <span class="input-check__text">Remember me</span>
+            <input
+              class="input-check__input"
+              type="checkbox"
+              checked="checked"
+            />
+            <span class="input-check__checkmark"></span>
+          </label>
+          <a href="./reset-password.html">Forgot password?</a>
+        </div>
+      </form>
+      <div class="sign-in-container__footer">
+        <a class="sign-in-container__footer--social-media">
+          <img
+            src="../assets/images/social-media/facebook-logo.png"
+            alt="facebook-logo"
+          />
+          Login with Facebook
+        </a>
+        <a class="sign-in-container__footer--social-media">
+          <img
+            src="../assets/images/social-media/google-logo.png"
+            alt="google-logo"
+          />
+          Login with Google
+        </a>
+        <p class="sign-in-container__footer--bigger-font">
+          New to netflix?
+          <a class="sign-in-container__footer--white-font" href="./sign-up.html"
+            >Sign up now</a
+          >.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
