@@ -1062,8 +1062,13 @@ template {
 }
 
 .carousel {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: scroll;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+  /* Ocultar scroll */
 }
 .carousel__title {
   font-family: Helvetica, Arial, sans-serif;
@@ -1075,12 +1080,6 @@ template {
 .carousel__item-wrapper {
   display: flex;
 }
-.carousel__item-wrapper:hover .carousel__item {
-  transform: translateX(-45%);
-}
-.carousel__item-wrapper:hover .carousel__item--original {
-  transform: translateX(-10%);
-}
 .carousel__item {
   background-color: #141414;
   height: 137px;
@@ -1088,6 +1087,7 @@ template {
   margin: 0 2px;
   cursor: pointer;
   transition: transform 400ms ease 500ms;
+  transform-origin: center left;
 }
 @media only screen and (max-width: 1024px) {
   .carousel__item {
@@ -1108,13 +1108,13 @@ template {
   }
 }
 .carousel__item:hover ~ .carousel__item {
-  transform: translateX(45%);
+  transform: translateX(40%);
 }
 .carousel__item:hover {
-  transform: scale(1.9) !important;
+  transform: scale(1.4) !important;
 }
 .carousel__item:nth-child(1):hover ~ .carousel__item {
-  transform: translateX(90%);
+  transform: translateX(40%);
 }
 .carousel__item:nth-child(1) {
   transform-origin: center left;
@@ -1139,13 +1139,13 @@ template {
   }
 }
 .carousel__item--original:hover {
-  transform: scale(1.2) !important;
+  transform: scale(1.1) !important;
 }
 .carousel__item--original:hover ~ .carousel__item--original {
   transform: translateX(10%);
 }
 .carousel__item--original:nth-child(1):hover ~ .carousel__item--original {
-  transform: translateX(20%);
+  transform: translateX(10%);
 }
 
 .movie-item {
@@ -1210,6 +1210,7 @@ template {
   height: 26px;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
   background-color: #fff;
   border-radius: 50%;
@@ -1219,7 +1220,7 @@ template {
   color: #141414;
   font-size: 16px;
   text-align: center;
-  margin-left: 2px;
+  margin: 0 0 2px 2px;
   cursor: pointer;
 }
 .movie-item__buttons {
