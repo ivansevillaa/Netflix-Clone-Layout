@@ -1,18 +1,17 @@
 .my-list {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "movies" "footer";
+  // display: grid;
+  // grid-template-rows: 68px 1fr auto;
+  // grid-template-areas: "header" "movies" "footer";
 
   .header {
     @include absolute();
-    grid-area: header;
   }
 
-  .movies {
-    grid-area: movies;
-  }
+  // .movies {
+  //   grid-area: movies;
+  // }
 
   .footer {
-    grid-area: footer;
+    margin-top: 40px;
   }
 }

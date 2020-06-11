@@ -1,3 +1,24 @@
 .movies-playlist {
-  @include relative(top 100px);
+  margin-top: $header-height;
+
+  &__title {
+    @include font-styles-helvetica(25px, $font-color, normal);
+  }
+
+  &__item-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
+    grid-auto-rows: 137px;
+    gap: 30px 5px;
+  }
+
+  &__item-wrapper {
+    background-color: $dark;
+    transition: transform 400ms ease 500ms;
+    transform-origin: center left;
+  }
+
+  .carousel {
+    padding-top: 0;
+  }
 }

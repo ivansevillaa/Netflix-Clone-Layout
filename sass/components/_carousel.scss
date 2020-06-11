@@ -15,14 +15,6 @@
     display: flex;
   }
 
-  &__item-wrapper:hover &__item {
-    // transform: translateX(-45%);
-  }
-
-  &__item-wrapper:hover &__item--original {
-    // transform: translateX(-10%);
-  }
-
   &__item {
     @include screen("l") {
       flex: 0 0 24.7%;
@@ -40,23 +32,14 @@
     height: 137px;
     flex: 0 0 19.7%;
     margin: 0 2px;
-    cursor: pointer;
     transition: transform 400ms ease 500ms;
     transform-origin: center left;
   }
   &__item:hover ~ &__item {
-    // transform: translateX(45%);
     transform: translateX(40%);
   }
   &__item:hover {
-    // transform: scale(1.9) !important;
-    transform: scale(1.4) !important;
-  }
-  &__item:nth-child(1):hover ~ &__item {
-    transform: translateX(40%);
-  }
-  &__item:nth-child(1) {
-    transform-origin: center left;
+    transform: scale(1.4);
   }
 
   &__item--original {
@@ -73,12 +56,9 @@
     height: 488px;
   }
   &__item--original:hover {
-    transform: scale(1.1) !important;
+    transform: scale(1.1);
   }
   &__item--original:hover ~ &__item--original {
-    transform: translateX(10%);
-  }
-  &__item--original:nth-child(1):hover ~ &__item--original {
     transform: translateX(10%);
   }
 }

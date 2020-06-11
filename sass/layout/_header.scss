@@ -2,7 +2,7 @@
   @include screen("l") {
     @include font-styles-helvetica(0.8rem);
   }
-  @include size(100%, 68px);
+  @include size(100%, $header-height);
   @include font-styles-helvetica(0.9rem);
   @include fixed(top 0);
   z-index: 2;
@@ -25,7 +25,7 @@
 
   &__navbar {
     @include screen("s") {
-      @include fixed(top 68px left -100vw bottom 0);
+      @include fixed(top $header-height left -100vw bottom 0);
       display: flex;
       justify-content: flex-start;
       padding-left: 20px;

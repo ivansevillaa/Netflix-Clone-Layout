@@ -1,6 +1,6 @@
 .movies {
   @include screen("s") {
-    @include relative(top 68px);
+    @include relative(top $header-height);
   }
   @include relative(top -200px);
   z-index: 1;
