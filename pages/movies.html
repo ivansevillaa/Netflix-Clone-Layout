@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body class="my-list">
+    <header class="container header">
+      <i class="icon-menu burger-button" id="burger-button"></i>
+      <a class="header__logo" href="./index.html">
+        <img src="../assets/images/logos/netflix-logo.png" alt="netflix logo" />
+      </a>
+      <nav class="header__navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./movies.html">Movies</a></li>
+          <li><a href="./my-list.html">My List</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions actions-container">
+        <form class="actions-container__search" role="search">
+          <i class="icon-search"></i>
+          <input type="search" placeholder="Search a movie" />
+        </form>
+        <div class="actions-container__profile-menu">
+          <div class="actions-container__profile-menu--profile">
+            <img src="../assets/images/profile/profile7.jpg" alt="profile" />
+            <i class="icon-triangle-down"></i>
+          </div>
+          <ul class="actions-container__profile-menu--options">
+            <i class="icon-triangle-up"></i>
+            <a href=""><li>Account</li></a>
+            <a href=""><li>Sign out of Netflix</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="movies-playlist">
+      <section class="container carousel">
+        <div class="genres-selection">
+          <h3 class="movies-playlist__title movies-playlist__title--bold">
+            Movies
+          </h3>
+          <div class="genres-selection__container">
+            <div class="genres-selection__genre-selected">
+              <p>Genres</p>
+              <i class="icon-triangle-down"></i>
+            </div>
+            <ul class="genres-selection__genres">
+              <li class="genres-selection__genre">Action</li>
+              <li class="genres-selection__genre">Anime</li>
+              <li class="genres-selection__genre">Argentinian Movies</li>
+              <li class="genres-selection__genre">Celebrate Pride</li>
+              <li class="genres-selection__genre">Children & Family</li>
+              <li class="genres-selection__genre">Classics</li>
+              <li class="genres-selection__genre">Comedies</li>
+              <li class="genres-selection__genre">Critics' Picks</li>
+              <li class="genres-selection__genre">Documentaries</li>
+              <li class="genres-selection__genre">Dramas</li>
+              <li class="genres-selection__genre">Faith & Spirituality</li>
+              <li class="genres-selection__genre">History</li>
+              <li class="genres-selection__genre">Hollywood</li>
+              <li class="genres-selection__genre">Horror</li>
+              <li class="genres-selection__genre">Independet</li>
+              <li class="genres-selection__genre">International</li>
+              <li class="genres-selection__genre">Music & Musicals</li>
+              <li class="genres-selection__genre">Police Movies</li>
+              <li class="genres-selection__genre">Romance</li>
+              <li class="genres-selection__genre">Sci-Fi & Fantasy</li>
+              <li class="genres-selection__genre">Science & Nature</li>
+              <li class="genres-selection__genre">Spanish-Language Movies</li>
+              <li class="genres-selection__genre">Sports</li>
+              <li class="genres-selection__genre">Thriller</li>
+            </ul>
+          </div>
+        </div>
+        <div class="movies-playlist__item-wrapper">
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover1.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover2.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover3.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover4.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover5.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover6.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover7.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover8.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover9.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover10.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover11.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover12.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+          <article class="movie-item">
+            <!-- here can be a video or image. -->
+            <img
+              class="movie-item__image"
+              src="../assets/images/covers/cover13.jpg"
+              alt="movie-cover"
+            />
+            <div class="movie-item__overlay">
+              <div class="movie-item__content-wrapper">
+                <div class="movie-item__description">
+                  <button>
+                    <i class="icon-play3"></i>
+                  </button>
+                  <h4>Movie Title</h4>
+                  <p class="age-rated">13+</p>
+                  <p>2h 18m</p>
+                </div>
+                <div class="movie-item__buttons">
+                  <i class="icon-volume-mute2"></i>
+                  <i class="icon-plus"></i>
+                </div>
+              </div>
+              <div class="movie-item__more-info-button">
+                <i class="icon-chevron-thin-down"></i>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__icons">
+        <a href="https://www.linkedin.com/in/ivan-sevilla-70296b174/"
+          ><i class="icon-linkedin"></i
+        ></a>
+        <a href="https://github.com/ivansevillaa"
+          ><i class="icon-facebook-official"></i
+        ></a>
+        <a href="https://github.com/ivansevillaa"
+          ><i class="icon-instagram"></i
+        ></a>
+        <a href="https://github.com/ivansevillaa"
+          ><i class="icon-twitter"></i
+        ></a>
+        <a href="https://github.com/ivansevillaa"
+          ><i class="icon-youtube-play"></i
+        ></a>
+      </div>
+      <div class="footer__text">
+        <a href="mailto:ivansevillaa@gmail.com">Contact Me</a>
+      </div>
+      <div class="footer__description">
+        <p>All icons except for Linkedin redirect you to my GitHub profile</p>
+      </div>
+    </footer>
+    <script>
+      const mq620px = window.matchMedia("screen and (max-width: 620px)");
+      const navbar = document.querySelector(".header__navbar");
+      const burgerButton = document.querySelector("#burger-button");
+
+      burgerButton.addEventListener("click", toggleNavbar);
+
+      mq620px.addListener(validation);
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener("click", toggleNavbar);
+        } else {
+          burgerButton.removeEventListener("click", toggleNavbar);
+        }
+      }
+      validation(navbar);
+
+      function toggleNavbar() {
+        if (navbar.classList.contains("header__navbar--active")) {
+          navbar.classList.remove("header__navbar--active");
+        } else {
+          navbar.classList.add("header__navbar--active");
+        }
+      }
+    </script>
+  </body>
+</html>

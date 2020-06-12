@@ -3,6 +3,12 @@
 
   &__title {
     @include font-styles-helvetica(25px, $font-color, normal);
+    margin-right: 50px;
+
+    &--bold {
+      font-size: 35px;
+      font-weight: bold;
+    }
   }
 
   &__item-wrapper {
