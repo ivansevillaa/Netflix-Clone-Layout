@@ -44,10 +44,6 @@
       @include font-styles-helvetica(10px, $font-color, normal);
       display: inline;
     }
-    .age-rated {
-      border: 1px solid $gray-transparent-1;
-      padding: 0 5px;
-    }
 
     button {
       @include size(26px);
@@ -98,7 +94,13 @@
     color: $color-primary-light;
   }
 }
+
 .movie-item:hover .movie-item__overlay {
   transition: opacity 1000ms ease-in-out;
   opacity: 1;
+}
+
+.age-rated {
+  border: 1px solid $gray-transparent-1;
+  padding: 1px 5px;
 }

@@ -1,0 +1,63 @@
+.more-info-container {
+  @include size(100vw, 525px);
+  @include relative();
+  @include screen("s") {
+    display: none;
+  }
+}
+
+.more-info-background {
+  display: flex;
+  height: 100%;
+}
+
+.more-info-left {
+  @include relative();
+  width: 30%;
+  background: $full-dark;
+
+  &:before {
+    @include absolute(top 0 bottom 0 left 100%);
+    width: 275px;
+    content: "";
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+.more-info-right {
+  background-image: url("../../assets/images/covers/cover1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+}
+
+.more-info-content {
+  @include absolute(top 0 left 0 right 0 bottom 0);
+  width: 461px;
+  padding: 12px 0 12px 53px;
+  box-sizing: content-box;
+  margin-top: $header-height;
+
+  .movie-info > .movie-info__description {
+    @include font-styles-helvetica(18px, $gray, normal);
+    margin: 13px 0 0 0;
+  }
+
+  .movie-info__buttons {
+    margin: 13px 0;
+  }
+}
+
+.more-info__close {
+  @include absolute(top 20px right 40px);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -989,6 +989,28 @@ template {
   margin: 10px 0 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+.movie-info__about {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #808080;
+  font-weight: normal;
+  margin: 2px 0 0 0;
+}
+.movie-info__about a:hover {
+  text-decoration: underline;
+}
+.movie-info__meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.movie-info__meta p {
+  margin: 0 8px 0 0;
+}
 
 .trailer-info-action {
   display: flex;
@@ -1216,10 +1238,6 @@ template {
   font-weight: normal;
   display: inline;
 }
-.movie-item__description .age-rated {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0 5px;
-}
 .movie-item__description button {
   width: 26px;
   height: 26px;
@@ -1273,6 +1291,11 @@ template {
 .movie-item:hover .movie-item__overlay {
   transition: opacity 1000ms ease-in-out;
   opacity: 1;
+}
+
+.age-rated {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1px 5px;
 }
 
 .form__input-container {
@@ -1422,6 +1445,78 @@ template {
 }
 .genres-selection__genre:hover {
   text-decoration: underline;
+}
+
+.more-info-container {
+  width: 100vw;
+  height: 525px;
+  position: relative;
+}
+@media only screen and (max-width: 620px) {
+  .more-info-container {
+    display: none;
+  }
+}
+
+.more-info-background {
+  display: flex;
+  height: 100%;
+}
+
+.more-info-left {
+  position: relative;
+  width: 30%;
+  background: #000;
+}
+.more-info-left:before {
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  position: absolute;
+  width: 275px;
+  content: "";
+  background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.more-info-right {
+  background-image: url("../../assets/images/covers/cover1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+}
+
+.more-info-content {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 461px;
+  padding: 12px 0 12px 53px;
+  box-sizing: content-box;
+  margin-top: 68px;
+}
+.more-info-content .movie-info > .movie-info__description {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #999;
+  font-weight: normal;
+  margin: 13px 0 0 0;
+}
+.more-info-content .movie-info__buttons {
+  margin: 13px 0;
+}
+
+.more-info__close {
+  top: 20px;
+  right: 40px;
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .home {
