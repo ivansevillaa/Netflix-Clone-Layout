@@ -27,4 +27,10 @@
   .carousel {
     padding-top: 0;
   }
+
+  .genres-selection__container {
+    @include screen("s") {
+      display: none;
+    }
+  }
 }

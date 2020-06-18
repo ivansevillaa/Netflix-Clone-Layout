@@ -873,6 +873,11 @@ template {
 .movies-playlist .carousel {
   padding-top: 0;
 }
+@media only screen and (max-width: 620px) {
+  .movies-playlist .genres-selection__container {
+    display: none;
+  }
+}
 
 .sign-in-container {
   width: 450px;
@@ -1540,6 +1545,9 @@ template {
   .home {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "movies" "footer";
+  }
+  .home .footer {
+    margin-top: 68px;
   }
 }
 

@@ -22,5 +22,9 @@
   @include screen("s") {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "movies" "footer";
+
+    .footer {
+      margin-top: $header-height;
+    }
   }
 }
